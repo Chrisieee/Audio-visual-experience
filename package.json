@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "name": "audio-visuele-ervaring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisieee/Audio-visual-experience.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Chrisieee/Audio-visual-experience/issues"
+  },
+  "homepage": "https://github.com/Chrisieee/Audio-visual-experience#readme"
+}
