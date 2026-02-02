@@ -6,16 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <script defer src="js/visual.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="src/js/visual.js"></script>
+    <link rel="stylesheet" href="/dist/output.css">
     <title>Audio API</title>
 </head>
-<body>
+<body class="flex flex-col justify-center items-center w-screen">
 <audio id="audio" src="src/audioTrack.mp3"></audio>
-<canvas id="canvas"></canvas>
+<section class="grid grid-cols-2 w-full gap-5">
+    <div class="text-center">
+        <h2 class="font-bold pt-4 text-4xl">Standaard</h2>
+    </div>
+    <div class="text-center">
+        <h2 class="font-bold pt-4 text-4xl">Met glitch effect</h2>
+    </div>
+    <div class="bg-black rounded-full mt-2">
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="bg-black rounded-full mt-2">
+        <canvas id="canvas1"></canvas>
+    </div>
+</section>
 
-<button id="playButton" data-playing="false" role="switch" aria-checked="false">
+<button class="text-5xl w-1/7 mx-auto mt-2" id="playButton" data-playing="false">
     <i id="icon" class="fa-solid fa-play"></i></button>
-
 </body>
 </html>
