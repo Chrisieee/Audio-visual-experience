@@ -3,6 +3,7 @@
     "@tailwindcss/vite": "^4.1.18"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.19"
   },
   "name": "audio-visuele-ervaring",
@@ -11,7 +12,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
